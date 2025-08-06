@@ -1,0 +1,20 @@
+package example.myapp
+
+fun main() {
+    val list = listOf(1, 5, 3, 4)
+    println(list.sum())
+
+//    val list2 = listOf("a", "bbb", "cc")
+//    println(list2.sumBy { it.length })
+
+    val list2 = listOf("a", "bbb", "cc")
+    for (s in list2.listIterator()) {
+        print("$s ")
+    }
+    println()
+
+    val scientific = hashMapOf("guppy" to "poecilia reticulata", "catfish" to "corydoras", "zebra fish" to "danio rerio" )
+    println (scientific.get("guppy"))
+    println(scientific.get("zebra fish"))
+    println(scientific.getOrElse("swordtail") {"sorry, I don't know"})
+}
